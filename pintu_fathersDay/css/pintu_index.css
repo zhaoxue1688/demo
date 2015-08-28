@@ -1,0 +1,165 @@
+html,body,p,a,h1,h2,h3,img {
+    margin:0; padding:0;
+}
+a,img,button,input,textarea,label,select
+{
+    -webkit-tap-highlight-color: transparent;
+}
+img {
+    border:0;
+    width:100%;
+    vertical-align: middle;
+}
+html{
+
+    height: 100%;
+}
+body {
+    font: 1em "Microsoft YaHei","微软雅黑","黑体",Arial,sans-serif; background: #ffffd1;
+}
+
+ol,dl {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+a:link
+a:visited
+a:hover
+a:active{
+    color:#fff;
+}
+em{
+    font-style: normal;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+
+section{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position:relative;
+    z-index:5
+}
+.wrap{
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.content{
+    background:url("../images/b_bg.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+    height:100%;
+    width:100%;
+}
+.puzzle_con{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logo{
+    padding:0 38px;
+}
+.logo img{
+    width:92px;
+}
+
+.scroll_pic{
+    width:60%;
+    margin:0 auto
+}
+.sub_box{
+
+}
+.sub_box .btn{
+    height:36px;
+    width:110px;
+    line-height: 36px;
+    display: block;
+    background-color:#f68d11;
+    border-radius: 4px;
+    text-align: center;
+    color:#fff;
+    margin:0 auto;
+    font-size:1rem;
+}
+
+.sub_box .btn_no{
+    background-color:#dadada;
+    color:#999;
+}
+.sub_box .hide{
+    display: none;
+}
+.msg_title{
+    font-size:1rem;
+    color:#c22816;
+    text-align: center;
+    font-weight: normal;
+}
+.msg_box{
+    width:90%;
+    margin:0 auto;
+}
+.msg_txt{
+    font-size:0.8rem;
+    color:#685143;
+    letter-spacing: 1px;
+    word-wrap:break-word;
+    word-break:break-all;
+    background-color:#fff;
+    padding:10px;
+    border-radius: 8px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+.msg_p{
+    opacity:1;
+}
+.mt10{
+    margin-top:10px;
+}
+.mt20{
+    margin-top:20px;
+}
+.mt30{
+    margin-top:30px;
+}
+.footer {
+    position: absolute;
+    bottom:0;
+    z-index:0;
+}
+.wrap{
+    position: relative;
+}
+
+/*iphone4*/
+@media screen and (max-width: 320px) and (max-height: 480px){
+    .wrap{
+        padding-bottom:44px;
+        position: relative;
+    }
+    .footer {
+        position: relative;
+        margin-top: -192px;
+    }
+
+}
+/*cfe4e9*/
+/*3ed2f9*/
+
+
+
+
+
+

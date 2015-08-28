@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="no-cache" http-equiv="Cache-Control">
+    <link rel="stylesheet" href="css/pintu.css" type="text/css">
+    <title>父亲节拼图</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="content">
+    <header>
+        <h1 class="logo"><img src="images/p_03.png"></h1>
+    </header>
+    <section>
+          <div class="puzzle_con">
+              <img src="images/pt3.png" alt="拼图">
+          </div>
+          <div class="puzzle_wz">
+              <p class="piwz">再有1位朋友的帮助，就有机会获得
+              精美的礼品，急需召唤朋友帮忙吧。</p>
+          </div>
+          <div class="puzzle_zh puzzle_zh2">
+              <a href="#" class="piza"><img src="images/p_10.png" alt="拼图找换朋友帮忙" id="shareimg"></a>
+          </div>
+
+    </section>
+    </div>
+</div>
+<footer class="footer">
+    <img src="images/footer.png"/>
+</footer>
+<!--隐藏层区域分享朋友圈-->
+<div class="share_warp" id="alert_share">
+	<div class="bg_mask"></div>
+	<div class="lantern_share">
+		<span class="arrow"><img src="images/arrow.png" style="width: 130px;"></span>
+		<p class="share3">点击右上角来召唤<br>朋友帮忙拼图吧</p>
+	</div>
+</div>
+<!--隐藏层区域分享朋友圈结束-->
+<script src="js/zepto.min.js"></script>
+<!--隐藏层区域分享朋友圈js-->
+<script>
+    $(function(){
+		$("#alert_share").hide();
+        $("#shareimg").click(function(){
+            $("#alert_share").show();
+        });
+		$("#alert_share").click(function(){
+            $("#alert_share").hide();
+        });
+    });
+</script>
+<!--隐藏层区域分享朋友圈结束js-->
+</body>
+</html>

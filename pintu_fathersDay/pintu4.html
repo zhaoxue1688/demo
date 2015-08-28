@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="no-cache" http-equiv="Cache-Control">
+    <link rel="stylesheet" href="css/pintu.css" type="text/css">
+    <title>父亲节拼图状态-打开礼盒</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="content">
+<header>
+    <h1 class="logo"><img src="images/p_03.png"></h1>
+</header>
+<section>
+    <div class="puzzle_con">
+        <img src="images/pt4.png" alt="拼图">
+    </div>
+</section>
+    </div>
+</div>
+<footer class="footer">
+    <img src="images/footer.png"/>
+</footer>
+<!--隐藏层区域拼图完成打开礼盒-->
+<div class="share_warp" id="alert_open" style="display:none">
+	<div class="bg_mask"></div>
+		<div class="lantern_share">
+			<div class="share">
+				<div class="sharebg">
+					<div class="share_alert2">
+						<p class="share-text2-center">恭喜，拼图已经完成啦！<br/>赶快打开礼盒，看看获得什么礼品吧！</p>
+						<p class="share-open"><a class="btn_ok">打开礼盒</a></p>
+						<p class="present"><img src="images/pt8_03.png" style="width: 95px;"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!--隐藏层区域拼图完成打开礼盒结束-->
+<!--隐藏层中奖显示区域-->
+<div class="share_warp" id="aletrzj" style="display:none">
+    <div class="bg_mask"></div>
+    <div class="lantern_share">
+        <div class="share3 zj_alert">
+            <div class="sharebg">
+                <div class="share_alert">
+                    <p class="share-text">恭喜，您中奖啦！</p>
+                    <img src="images/zj.png"/>
+                    <p class="zj_tit">手表</p>
+                    <p class="zj_num">兑换码：1937440</p>
+                    <p class="zj_tip">奖品已实物为主</p>
+                    <p class="zj_txt pt10">兑换时间：12月01日-12月09日</p>
+                    <p class="zj_txt">兑换地点：银泰百货XXXX店</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--隐藏层中奖显示区域结束-->
+<!--隐藏层没有中奖提示区域-->
+<div class="share_warp" id="alert_close" style="display:none">
+	<div class="bg_mask"></div>
+		<div class="lantern_share">
+			<div class="share2">
+				<div class="sharebg">
+					<div class="share_alert3">
+						<p class="s1">很遗憾，您没有中奖<span><button type="button" class="close"><span><a href="pintu.html">×</a></span>
+							</button></span></p>
+						<p class="s2">别灰心，这次没有中奖，再接再厉！</p>
+						<p><a href="pintu.html" class="btn_ok">领取拼图</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!--隐藏层没有中奖提示区域结束-->
+<script src="js/zepto.min.js"></script>
+<script>
+    $(function(){
+		var zhongjiang = 1; 
+        if(zhongjiang = 1){// 1 = 中奖 ; 0 = 没中奖
+			$("#alert_open").show();
+			$(".btn_ok").click(function(){
+				$("#alert_open").hide();
+				$("#aletrzj").show();
+			});
+		}else{
+			$("#alert_close").show();
+		}
+    });
+</script>
+</body>
+</html>

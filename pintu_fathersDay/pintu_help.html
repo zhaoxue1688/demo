@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="no-cache" http-equiv="Cache-Control">
+    <link rel="stylesheet" href="css/pintu.css" type="text/css">
+    <title>父亲节拼图</title>
+</head>
+<style>
+    .wrap{
+        padding-bottom:147px;
+    }
+</style>
+<body>
+<div class="wrap">
+    <div class="content">
+<header>
+    <h1 class="logo"><img src="images/p_03.png"></h1>
+</header>
+    <section>
+          <div class="puzzle_p clearfix">
+              <img src="images/p4_03.png"/>
+          </div>
+          <div class="puzzle_p0">
+              <img src="images/p4_07.png" alt="拼图">
+          </div>
+        <div class="p_box clearfix">
+            <div class="puzzle_p1">
+                <a class="piwz"><img src="images/p4_11.png" alt="帮忙拼图" id="help_shareimg"></a>
+            </div>
+            <div class="puzzle_p2">
+                <a href="pintu.html" class="piza"><img src="images/p4_14.png" alt="拼图"></a>
+            </div>
+        </div>
+    </section>
+    </div>
+</div>
+<footer class="footer">
+    <img src="images/footer.png"/>
+</footer>
+<!--隐藏层领取拼图未重复区域-->
+<div class="share_warp" id="alert_help" style="display:none">
+	<div class="bg_mask"></div>
+		<div class="lantern_share">
+			<div class="share2">
+				<div class="sharebg">
+					<div class="share_alert">
+						<p class="share-text">您已经成功帮助朋友贡献一块拼图,马上去领取属于自己的那块拼图吧!</p>
+						<p><a  href="javascript:void(0);" class="btn_ok" id="receive">确定</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!--隐藏层领取拼图区域未重复结束-->
+<!--隐藏层重复提示区域-->
+<div class="share_warp" id="alert_help_cannot" style="display:none">
+	<div class="bg_mask"></div>
+		<div class="lantern_share">
+			<div class="share2">
+				<div class="sharebg">
+					<div class="share_alert">
+						<p class="share-text-center">您已经帮助朋友贡献拼图了,不能重复贡献拼图</p>
+						<p><a class="btn_ok" id="cannot">确定</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!--隐藏层重复提示区域结束-->
+<script src="js/zepto.min.js"></script>
+<!--隐藏层区域分享朋友圈js-->
+<script>
+    $(function(){
+		var pintu = 0;//1 = 未重复 ; 0 = 重复
+		$("#help_shareimg").click(function() {
+			if (pintu = 1){
+				$("#alert_help").show();
+			}else{
+				$("#alert_help_cannot").show();
+			}
+		});
+
+        $(".btn_ok").click(function(){
+            $(".share_warp").hide();
+            $("#alert_help_cannot").hide();
+        });
+    });
+</script>
+<!--隐藏层区域分享朋友圈结束js-->
+</body>
+</html>
