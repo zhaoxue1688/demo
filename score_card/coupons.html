@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>优惠卷</title>
+		<link rel="stylesheet" href="css/car_store2015831.css" />
+	</head>
+	<body>
+		<div class="warp">
+			<section class="subNav currentDd currentDt">
+				<div class="upimg"><img src="img/upimg.jpg"></div>
+			</section>
+			<div class="navContent" style="display: block;">
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<img src="img/juanimg.png">
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<img src="img/juanimg.png">
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<img src="img/juanimg.png">
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--结束-->
+			<section class="subNav currentDd currentDt">
+				<div class="upimg" style="padding-top: 14px;"><img src="img/upimg1.jpg"></div>
+			</section>
+			<div class="navContent none">
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<span class="juanimg"><img src="img/juanimg.png"></span>
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+			</div>
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<span class="juanimg"><img src="img/juanimg.png"></span>
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<span class="juanimg"><img src="img/juanimg.png"></span>
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="subNav currentDd currentDt">
+				<div class="upimg" style="padding-top: 14px;"><img src="img/upimg1.jpg"></div>
+			</section>
+			<div class="navContent none">
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<span class="juanimg"><img src="img/juanimg.png"></span>
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+			</div>
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<img src="img/juanimg.png">
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="juan">
+					<div class="juancon">
+						<div class="juanleft">
+							<span class="juanimg"><img src="img/juanimg.png"></span>
+						</div>
+						<div class="juanright">
+							<span class="juan1">10元代金券<i class="juan-num">500积分</i></span>
+							<span class="juan2">领取后当天生效5天内有效<i class="btn-red">领取</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		由扫货邦提供技术支持
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script>
+			$(function(){
+				$(".subNav").click(function(){
+					$(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd");
+					$(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt");
+					$(this).next(".navContent").slideToggle(300).siblings(".navContent").slideUp(500);
+				})	
+			})
+		</script>
+	</body>
+</html>

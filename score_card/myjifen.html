@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="format-detection" content="email=no" />
+		<meta content="no-cache" http-equiv="Cache-Control">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的积分</title>
+		<link rel="stylesheet" href="css/car_store2015831.css" />
+	</head>
+	<body>
+		<div class="warp">
+			<nav class="intg_nav">
+				<ul>
+					<li class="active">门店积分</li>
+					<li class="my1">积分明细</li>
+				</ul>
+			</nav>
+			<section class="intg_content">
+				<div class="intg_content_ul">
+					<div class="myjifen">
+						<ul>
+							<li>北京市百货大楼43242</li>
+							<li>
+								<div class="myfjifen-txt">
+									<span class="store">积分</span>
+									<span class="store-num">er4234234werw435345344</span>
+								</div>
+								<div class="myjifen-btn">
+									<span class="btn">积分兑换</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="myjifen">
+						<ul>
+							<li>北京市百货111大楼</li>
+							<li>
+								<div class="myfjifen-txt">
+									<span class="store">积分</span>
+									<span class="store-num">e2222rwerw43534534</span>
+								</div>
+								<div class="myjifen-btn">
+									<span class="btn">积分兑换</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="page"><span>加载更多</span></div>
+				</div>
+				<div class="intg_content_ul  none">
+					<div class="myjifen">
+						<ul>
+							<li>北京市百货大333楼</li>
+							<li>
+								<div class="myfjifen-txt">
+									<span class="store">积分</span>
+									<span class="store-num">e222434rwerw4353453453</span>
+								</div>
+								<div class="myjifen-btn">
+									<span class="btn">积分兑换</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="myjifen">
+						<ul>
+							<li>北京市百222货大楼</li>
+							<li>
+								<div class="myfjifen-txt">
+									<span class="store">积分</span>
+									<span class="store-num">111erwerw4353453453</span>
+								</div>
+								<div class="myjifen-btn">
+									<span class="btn">积分兑换</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="page"><span>加载更多</span></div>
+				</div>
+			</section>
+		</div>
+		
+		<div class="footer">由扫货邦提供技术支持</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script>
+			$(function(){
+				$('.intg_nav').find('li').on('click',function(){
+					var i = $(this).index();
+					var child = $('.intg_content').children('.intg_content_ul').get(i);
+					$(this).addClass('active').siblings().removeClass('active');
+					$(child).show().siblings().hide()
+				});
+			})
+		</script>
+	</body>
+</html>
